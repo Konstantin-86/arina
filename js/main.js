@@ -1,3 +1,26 @@
+var swiper = new Swiper(".swiper", {
+  loop: true,
+  slidesPerView: 1,
+  speed: 700,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  breakpoints: {
+    1220: {
+      slidesPerView: 3,
+      spaceBetween: 25,
+    },
+    850: {
+      slidesPerView: 2,
+      spaceBetween: 15,
+    },
+  },
+});
+
 const mainBtn = document.querySelector(".item-btn");
 const formClose = document.querySelector(".form__close");
 const body = document.querySelector("body");
@@ -309,20 +332,20 @@ gsap.from(".covers__item-2", {
   },
 });
 
-const swiper = new Swiper(".swiper", {
-  // effect: "cube",
-  loop: true,
-  autoplay: true,
+// const swiper = new Swiper(".swiper", {
+//   // effect: "cube",
+//   loop: true,
+//   autoplay: true,
 
-  /*  pagination: {
-    el: ".swiper-pagination",
-  },
+//   /*  pagination: {
+//     el: ".swiper-pagination",
+//   },
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  }, */
-});
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   }, */
+// });
 
 const educationID = document.getElementById("educationID");
 const diplomaID = document.getElementById("diplomaID");
