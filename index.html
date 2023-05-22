@@ -19,56 +19,64 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>title</title>
+    <title>Arina Vokal</title>
   </head>
   <body>
+    <nav class="menu">
+      <ul class="list">
+        <li class="list__item">
+          <a href="" class="item__link item__link-aboutMeID">Обо мне</a>
+        </li>
+        <li class="list__item">
+          <a href="" class="item__link item__link-educationID"
+            >Моë образование</a
+          >
+        </li>
+
+        <li class="list__item">
+          <a href="" class="item__link item__link-coversID"> Видео</a>
+        </li>
+        <li class="list__item">
+          <a href="" class="item__link item__link-priceID">Цены</a>
+        </li>
+
+        <li class="list__item">
+          <a href="" class="item__link item__link-diplomaID"> Отзывы</a>
+        </li>
+        <li class="list__item">
+          <a href="vk://vk.com/kazanovanova" class="item__link-social">
+            <img class="vk-img" src="images/vk.png" alt="" />
+          </a>
+        </li>
+        <li class="list__item">
+          <a
+            href="https://instagram.com/arina_yakimtseva?igshid=NTc4MTIwNjQ2YQ=="
+            class="item__link-social"
+          >
+            <img class="vk-inst" src="images/inst.png" alt="" />
+          </a>
+        </li>
+      </ul>
+      <div class="burger"></div>
+    </nav>
     <main class="main">
-      <nav class="menu">
-        <ul class="list">
-          <li class="list__item">
-            <a href="" class="item__link item__link-aboutMeID">Обо мне</a>
-          </li>
-          <li class="list__item">
-            <a href="" class="item__link item__link-educationID"
-              >Моë образование</a
-            >
-          </li>
-
-          <li class="list__item">
-            <a href="" class="item__link item__link-coversID"> Видео</a>
-          </li>
-          <li class="list__item">
-            <a href="" class="item__link item__link-priceID">Цены</a>
-          </li>
-
-          <li class="list__item">
-            <a href="" class="item__link item__link-diplomaID"> Отзывы</a>
-          </li>
-          <li class="list__item">
-            <a href="vk://vk.com/kazanovanova" class="item__link-social">
-              <img class="vk-img" src="images/vk.png" alt="" />
-            </a>
-          </li>
-          <li class="list__item">
-            <a
-              href="https://instagram.com/arina_yakimtseva?igshid=NTc4MTIwNjQ2YQ=="
-              class="item__link-social"
-            >
-              <img class="vk-inst" src="images/inst.png" alt="" />
-            </a>
-          </li>
-        </ul>
-        <div class="burger"></div>
-      </nav>
       <div class="container">
-        <h1 class="main-title">арина якимцева</h1>
-        <p class="main__subtitle">Преподователь вокала</p>
+        <h1 class="main-title">Преподователь вокала</h1>
+        <p class="main__subtitle">
+          Арина Якимцева
+          <span
+            >Индивидуальные занятия и групповые курсы
+            онлайн и в студии</span
+          >
+        </p>
         <div class="item-btn">
-          <span class="item-btn__text">Записаться на пробное занятие</span>
+          Записаться на пробное занятие <span class="item-btn__text"></span>
         </div>
-
-        <form class="form" action="#" method="">
-          <div class="form__close">
+<div class="form__container">
+  <form class="form" action="#" method="">
+          
+        
+             <div class="form__close">
             <img src="images/cancel.png" alt="" />
           </div>
           <h3 class="form__title">Записаться на пробное занятие</h3>
@@ -104,7 +112,12 @@
           <div class="form__item">
             <button type="submit" class="form__btn">Oтправить</button>
           </div>
+         
+         
         </form>
+</div>
+        
+
       </div>
     </main>
     <!-- /////////////////////////////////////////////// -->
@@ -210,8 +223,8 @@
               <img src="images/swp/6.png" alt="" />
             </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
+        <!-- <div class="swiper-pagination"></div> -->
       </div>
     </section>
     <!-- /////////////////////////////////////////////// -->
@@ -243,63 +256,848 @@
       </div>
     </section>
     <!-- /////////////////////////////////////////////// -->
-    <!-- <section id="priceID" class="price">
-      <div class="cotainer">
+    <section id="priceID" class="price">
+      <div class="container">
         <h2 class="price-title title">Цены</h2>
-        <div class="price__wrapper">
-          <div class="price__item price__item-1">
-            <p class="price__item-title">Онлайн занятие</p>
-            <p class="price__item-text">
-              Мои уроки проводятся через видеосвязь, что позволяет вам получать
-              качественные занятия в любом месте и в любое время.
-            </p>
-            <p class="price__item-price">1000 руб</p>
+        <div class="price__box">
+          <div class="price__tabs">
+            <div class="price-adults active tabs__item ">Взрослые</div>
+            <div class="price-children tabs__item">Дети</div>
           </div>
-          <div class="price__item price__item-2">
-            <p class="price__item-title">
-              Занятие в студии индивидуально (взрослый)
-            </p>
-            <p class="price__item-text">
-              Если вы предпочитаете занятия в студии, я также предоставляю эту
-              возможность. Я готова принять вас в нашей студии и помочь вам
-              развиваться как певец.
-            </p>
-            <p class="price__item-price">1500 руб</p>
+        </div>
+        <div class="price-adults__box">
+          <div class="price-adults__box-item">
+            <h3 class="price-adults-title">Караоке терапия</h3>
+            <div class="price-adults-rub">1500 руб</div>
+            <div class="price-adults-text">
+              <ul class="price-adults__list">
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Улучшение настроения
+                </li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Снижение уровня стресса
+                </li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Улучшение дыхательной функции
+                </li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Развитие социальных навыков
+                </li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Улучшение памяти
+                </li>
+              </ul>
+            </div>
+            <div class="price-adults-button">Записаться</div>
           </div>
-          <div class="price__item price__item-3">
-            <p class="price__item-title">
-              Занятие в студии индивидуально (ребенок)
-            </p>
-            <p class="price__item-text">
-              Если вы предпочитаете занятия в студии, я также предоставляю эту
-              возможность. Я готова принять вас в нашей студии и помочь вам
-              развиваться как певец.
-            </p>
-            <p class="price__item-price">1500 руб</p>
+          <div class="price-adults__box-item">
+            <h3 class="price-adults-title">Онлайн курс по вокалу</h3>
+            <div class="price-adults-rub">800 руб</div>
+            <div class="price-adults-text">
+              <ul class="price-adults__list">
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Гибкость</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Доступность</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Индивидуальный подход</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Возможность записи</li>
+                <li class="price-adults__list-item">
+                  
+                  </svg>
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Обратная связь</li>
+              </ul>
+              <div class="price-adults-button">Записаться</div>
+            </div>
           </div>
-          <div class="price__item price__item-4">
-            <p class="price__item-title">
-              Групповое занятие в студии (ребенок)
-            </p>
-            <p class="price__item-text">
-              Если вы предпочитаете занятия в студии, я также предоставляю эту
-              возможность. Я готова принять вас в нашей студии и помочь вам
-              развиваться как певец.
-            </p>
-            <p class="price__item-price">800 руб</p>
+          <div class="price-adults__box-item">
+            <h3 class="price-adults-title">Индивидуальный онлайн урок</h3>
+            <div class="price-adults-rub">2300 руб</div>
+            <div class="price-adults-text">
+              <ul class="price-adults__list">
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Гибкость</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Больше мотивации</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Удобство</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Более быстрый прогресс</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Больше внимания</li>
+              </ul>
+              <div class="price-adults-button">Записаться</div>
+            </div>
           </div>
-          <div class="price__item price__item-5">
-            <p class="price__item-title">Караоке терапия</p>
-            <p class="price__item-text">
-              Караоке терапия подходит для всех, кто хочет улучшить свое
-              психическое и физическое здоровье. Мы предлагаем занятия как для
-              детей, так и для взрослых.
-            </p>
-            <p class="price__item-price">700 руб</p>
+          <div class="price-adults__box-item">
+            <h3 class="price-adults-title">Индивидуальный оффлайн урок</h3>
+            <div class="price-adults-rub">300 руб</div>
+            <div class="price-adults-text">
+              <ul class="price-adults__list">
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Личное присутствие</li>
+                <li class="price-adults__list-item">
+                  
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Более интерактивное обучение
+                </li>
+                <li class="price-adults__list-item">
+                  
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Более эффективный контроль
+                </li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Более социальный аспект</li>
+                <li class="price-adults__list-item">
+                  
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Меньше отвлекающих факторов
+                </li>
+              </ul>
+              <div class="price-adults-button">Записаться</div>
+            </div>
+          </div>
+        </div>
+        <!-- /////////////// -->
+        <div class="price-children__box">
+          <div class="price-children__box-item">
+            <h3 class="price-adults-title">
+              Музыкальное развитие от 1,5 до 2,5 лет
+            </h3>
+            <div class="price-adults-rub">3800 руб</div>
+            <div class="price-adults-text">
+              <ul class="price-adults__list">
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Развитие речи</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Развитие моторики</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Развитие интеллекта</li>
+                <li class="price-adults__list-item">
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Развитие эмоциональной интеллектуальности
+                </li>
+                <li class="price-adults__list-item">
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Улучшение настроения и самочувствия
+                </li>
+              </ul>
+              <div class="price-adults-button">Записаться</div>
+            </div>
+          </div>
+          <div class="price-children__box-item">
+            <h3 class="price-adults-title">Вокальный ансамбль 3-5 лет</h3>
+            <div class="price-adults-rub">6500 руб</div>
+            <div class="price-adults-text">
+              <ul class="price-adults__list">
+                <li class="price-adults__list-item">
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Развитие музыкальных навыков
+                </li>
+                <li class="price-adults__list-item">
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Развитие социальных навыков
+                </li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Улучшение речи</li>
+                <li class="price-adults__list-item">
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Улучшение настроения и самочувствия
+                </li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Укрепление самооценки</li>
+              </ul>
+              <div class="price-adults-button">Записаться</div>
+            </div>
+          </div>
+          <div class="price-children__box-item">
+            <h3 class="price-adults-title">Вокальный ансамбль 5-7 лет</h3>
+            <div class="price-adults-rub">600 руб</div>
+            <div class="price-adults-text">
+              <ul class="price-adults__list">
+                <li class="price-adults__list-item">
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Развитие музыкальных навыков
+                </li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Развитие слуха</li>
+                <li class="price-adults__list-item">
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Улучшение координации движений
+                </li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Укрепление дисциплины</li>
+                <li class="price-adults__list-item">
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Подготовка к будущей карьере в музыке
+                </li>
+              </ul>
+              <div class="price-adults-button">Записаться</div>
+            </div>
+          </div>
+          <div class="price-children__box-item">
+            <h3 class="price-adults-title">Индивидуальный онлайн урок</h3>
+            <div class="price-adults-rub">1600 руб</div>
+            <div class="price-adults-text">
+              <ul class="price-adults__list">
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Индивидуальный подход</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Гибкость расписания</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Удобство</li>
+                <li class="price-adults__list-item">
+                  <?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+                  Больше внимания</li>
+                <li class="price-adults__list-item">
+<?xml version="1.0" encoding="utf-8"?>
+                  <svg
+                    width="25px"
+                    height="25px"
+                    viewBox="0 -4 24 24"
+                    id="meteor-icon-kit__solid-checkmark"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M3.06066 6.4393C2.47487 5.85355 1.52513 5.85355 0.93934 6.4393C0.353553 7.0251 0.353553 7.9749 0.93934 8.5607L7.93934 15.5607C8.52513 16.1464 9.47487 16.1464 10.0607 15.5607L23.0607 2.56066C23.6464 1.97487 23.6464 1.02513 23.0607 0.43934C22.4749 -0.14645 21.5251 -0.14645 20.9393 0.43934L9 12.3787L3.06066 6.4393z"
+                      fill="#4938db"
+                    />
+                  </svg>
+
+                  Больше возможностей для обратной связи
+                </li>
+              </ul>
+              <div class="price-adults-button">Записаться</div>
+            </div>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- /////////////////////////////////////////////// -->
     <!-- <section id="diplomaID" class="diploma">
       <div class="container">
