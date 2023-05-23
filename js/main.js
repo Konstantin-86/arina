@@ -163,22 +163,28 @@ let phoneMask = IMask(document.getElementById("form__tel"), {
   mask: "+{7}(000)000-00-00",
 });
 ////////////////
+// const btnLessonsInMob = document.querySelector(".item__link-priceID2");
+// const itemSublink = document.querySelector(".item__sublink");
+// btnLessonsInMob.addEventListener("click", function (e) {
+//   e.preventDefault();
+//   itemSublink.style.transform = "rotateX(0deg)";
+//   itemSublink.style.opacity = "1";
+//   itemSublink.style.visibility = "visible";
+// });
+
+///////////////
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(ScrollToPlugin);
 
+////////////////Навигация меню
 const educationID = document.getElementById("educationID");
-const diplomaID = document.getElementById("diplomaID");
 const coversID = document.getElementById("coversID");
-/* const repertoireID = document.getElementById("repertoireID"); */
 const priceID = document.getElementById("priceID");
 const aboutMeID = document.getElementById("aboutMeID");
+const subSublink = document.querySelectorAll(".sub__sublink");
 
-/* const itemlLinkRepertoireID = document.querySelector(
-  ".item__link-repertoireID"
-); */
 const itemlLinkeducationID = document.querySelector(".item__link-educationID");
-const itemLinkDiplomaID = document.querySelector(".item__link-diplomaID");
 const itemLinkCoversID = document.querySelector(".item__link-coversID");
 const itemLinkPriceID = document.querySelector(".item__link-priceID");
 const itemLinkAboutMeID = document.querySelector(".item__link-aboutMeID");
@@ -189,21 +195,11 @@ itemlLinkeducationID.addEventListener("click", function (e) {
 
   gsap.to(window, {
     duration: 1,
-    scrollTo: { y: "#educationID", ease: "power1" },
+    scrollTo: { y: "#educationID", ease: "power4" },
   });
   burger.classList.remove("active");
   list.classList.remove("active");
-});
-itemLinkDiplomaID.addEventListener("click", function (e) {
-  e.preventDefault();
-  body.classList.remove("lock");
-
-  gsap.to(window, {
-    duration: 1,
-    scrollTo: { y: "#diplomaID", ease: "power1" },
-  });
-  burger.classList.remove("active");
-  list.classList.remove("active");
+  mainBtn.style.display = "none";
 });
 itemLinkCoversID.addEventListener("click", function (e) {
   e.preventDefault();
@@ -211,10 +207,11 @@ itemLinkCoversID.addEventListener("click", function (e) {
 
   gsap.to(window, {
     duration: 1,
-    scrollTo: { y: "#coversID", ease: "power1" },
+    scrollTo: { y: "#coversID", ease: "power4" },
   });
   burger.classList.remove("active");
   list.classList.remove("active");
+  mainBtn.style.display = "none";
 });
 
 itemLinkPriceID.addEventListener("click", function (e) {
@@ -227,6 +224,21 @@ itemLinkPriceID.addEventListener("click", function (e) {
   });
   burger.classList.remove("active");
   list.classList.remove("active");
+  mainBtn.style.display = "none";
+});
+subSublink.forEach((item) => {
+  item.addEventListener("click", function (e) {
+    e.preventDefault();
+    body.classList.remove("lock");
+
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: "#priceID" },
+    });
+    burger.classList.remove("active");
+    list.classList.remove("active");
+    mainBtn.style.display = "none";
+  });
 });
 itemLinkAboutMeID.addEventListener("click", function (e) {
   e.preventDefault();
@@ -238,4 +250,5 @@ itemLinkAboutMeID.addEventListener("click", function (e) {
   });
   burger.classList.remove("active");
   list.classList.remove("active");
+  mainBtn.style.display = "none";
 });
