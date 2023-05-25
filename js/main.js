@@ -7,7 +7,13 @@ const list = document.querySelector(".list");
 const body = document.querySelector("body");
 const youTubeLink1 = document.querySelector(".covers__item1");
 const youTubeLink2 = document.querySelector(".covers__item2");
+const youTubeLink3 = document.querySelector(".covers__item3");
+const youTubeLink4 = document.querySelector(".covers__item4");
 const formContainer = document.querySelector(".form__container");
+const lessonsBtn = document.querySelectorAll(".lessons__item-iner");
+const lessonsText = document.querySelector(".lessons__item-text");
+const lessonsItem = document.querySelectorAll(".lessons__item");
+const lessonsItemImg = document.querySelector(".lessons__item-img");
 
 ///////////// Табы Взрослые-Дети
 const priceAdultsBtn = document.querySelector(".price-adults");
@@ -96,6 +102,14 @@ youTubeLink2.addEventListener("click", function (e) {
   e.preventDefault();
   window.location.href = "https://www.youtube.com";
 });
+youTubeLink3.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.location.href = "https://www.youtube.com";
+});
+youTubeLink4.addEventListener("click", function (e) {
+  e.preventDefault();
+  window.location.href = "https://www.youtube.com";
+});
 
 ///////главная кнопка
 
@@ -163,15 +177,16 @@ let phoneMask = IMask(document.getElementById("form__tel"), {
   mask: "+{7}(000)000-00-00",
 });
 ////////////////
-// const btnLessonsInMob = document.querySelector(".item__link-priceID2");
-// const itemSublink = document.querySelector(".item__sublink");
-// btnLessonsInMob.addEventListener("click", function (e) {
-//   e.preventDefault();
-//   itemSublink.style.transform = "rotateX(0deg)";
-//   itemSublink.style.opacity = "1";
-//   itemSublink.style.visibility = "visible";
-// });
 
+lessonsItem.forEach((item) => {
+  item.addEventListener("click", () => {
+    let text = item.querySelector(".lessons__item-text");
+    let img = item.querySelector(".lessons__item-img");
+    item.classList.toggle("width");
+    img.classList.toggle("rotate");
+    text.classList.toggle("active");
+  });
+});
 ///////////////
 
 gsap.registerPlugin(ScrollTrigger);
@@ -188,7 +203,20 @@ const itemlLinkeducationID = document.querySelector(".item__link-educationID");
 const itemLinkCoversID = document.querySelector(".item__link-coversID");
 const itemLinkPriceID = document.querySelector(".item__link-priceID");
 const itemLinkAboutMeID = document.querySelector(".item__link-aboutMeID");
+////обо мне
+itemLinkAboutMeID.addEventListener("click", function (e) {
+  e.preventDefault();
+  body.classList.remove("lock");
 
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: { y: "#aboutMeID", ease: "power4" },
+  });
+  burger.classList.remove("active");
+  list.classList.remove("active");
+  mainBtn.style.display = "none";
+});
+///////мое образование
 itemlLinkeducationID.addEventListener("click", function (e) {
   e.preventDefault();
   body.classList.remove("lock");
@@ -201,6 +229,7 @@ itemlLinkeducationID.addEventListener("click", function (e) {
   list.classList.remove("active");
   mainBtn.style.display = "none";
 });
+//////////видео
 itemLinkCoversID.addEventListener("click", function (e) {
   e.preventDefault();
   body.classList.remove("lock");
@@ -213,7 +242,7 @@ itemLinkCoversID.addEventListener("click", function (e) {
   list.classList.remove("active");
   mainBtn.style.display = "none";
 });
-
+///////цены
 itemLinkPriceID.addEventListener("click", function (e) {
   e.preventDefault();
   body.classList.remove("lock");
@@ -240,15 +269,19 @@ subSublink.forEach((item) => {
     mainBtn.style.display = "none";
   });
 });
-itemLinkAboutMeID.addEventListener("click", function (e) {
-  e.preventDefault();
-  body.classList.remove("lock");
+/////цены на моб
+if (window.innerWidth < 830) {
+  const btnLessonsInMob = document.querySelector(".item__link-priceID2");
+  btnLessonsInMob.addEventListener("click", function (e) {
+    e.preventDefault();
+    body.classList.remove("lock");
 
-  gsap.to(window, {
-    duration: 1,
-    scrollTo: { y: "#aboutMeID", ease: "power4" },
+    gsap.to(window, {
+      duration: 1,
+      scrollTo: { y: "#lessonsID", ease: "power4" },
+    });
+    burger.classList.remove("active");
+    list.classList.remove("active");
+    mainBtn.style.display = "none";
   });
-  burger.classList.remove("active");
-  list.classList.remove("active");
-  mainBtn.style.display = "none";
-});
+}
