@@ -50,7 +50,9 @@ const priceChildrenBoxItem = document.querySelectorAll(
 priceChildrenBoxItem.forEach((item) => {
   item.addEventListener("click", () => {
     let title = item.querySelector("h3");
-    formTitle.textContent = `Записаться на ${title.textContent}`;
+    formTitle.textContent = `Записаться на ${(
+      <strong>title.textContent</strong>
+    )}`;
     form.classList.add("active");
     body.classList.add("lock");
     formContainer.style.display = "block";
@@ -119,7 +121,7 @@ if (burger.classList.contains("active")) {
 mainBtn.addEventListener("click", () => {
   form.classList.add("active");
   body.classList.add("lock");
-  mainBtn.style.display = "none";
+  // mainBtn.style.display = "none";
   burger.style.display = "none";
   list.classList.remove("active");
   formContainer.style.display = "block";
@@ -130,7 +132,7 @@ formClose.addEventListener("click", () => {
   body.classList.remove("lock");
   burger.classList.remove("active");
   formContainer.style.display = "none";
-  mainBtn.style.display = "none";
+  mainBtn.style.display = "block";
   if (window.innerWidth <= 830) {
     burger.style.display = "block";
   }

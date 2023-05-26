@@ -439,7 +439,6 @@ body.lock {
 
 .svg-arrow {
     margin-left: 5px;
-    transform: rotateZ(180deg);
     transition: all 0.3s;
 }
 
@@ -532,7 +531,7 @@ body.lock {
     border-radius: 15px;
     background-color: #3d3551;
     cursor: pointer;
-    transition: color 0.5s;
+    transition: all 0.3s ease-in;
 }
 
 .item-btn.active {
@@ -586,6 +585,11 @@ body.lock {
     text-align: center;
     font-size: 22px;
     font-weight: bold;
+}
+
+.form__title span {
+    font-size: 24px;
+    color: #000;
 }
 
 .form-label {
@@ -1070,14 +1074,17 @@ body.lock {
 }
 
 .lessons__item-iner {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    cursor: pointer;
 }
 
 .lessons__item-title {
     margin: 15px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -1330,7 +1337,7 @@ body.lock {
     }
 
     .item__link-priceID2:hover .svg-arrow {
-        transform: rotateZ(0deg);
+        transform: rotateZ(180deg);
     }
 
     .item__link-priceID2:hover .item__sublink {
@@ -1368,7 +1375,24 @@ body.lock {
     }
 }
 
+@media (min-width: 1024px) {
+    .item-btn {
+        border: 3px solid #fff;
+    }
+
+    .item-btn:hover {
+        background-color: #fff;
+        color: #000;
+        font-weight: bold;
+        border: none;
+    }
+}
+
 @media (max-width: 1220px) {
+    .item-btn {
+        border: 3px solid #fff;
+    }
+
     .flex__1 {
         order: 1;
     }
@@ -1427,6 +1451,11 @@ body.lock {
 }
 
 @media (max-width: 830px) {
+    .lessons__item-title {
+        font-size: 16px;
+        max-width: 240px;
+    }
+
     .lessons-box {
         flex-wrap: wrap;
     }
