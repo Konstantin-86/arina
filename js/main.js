@@ -1,6 +1,7 @@
 const mainBtn = document.querySelector(".item-btn");
 const formClose = document.querySelector(".form__close");
 const form = document.querySelector(".form");
+const formInput = document.querySelector(".form-input");
 const sucsess = document.querySelector(".sucsess");
 const burger = document.querySelector(".burger");
 const list = document.querySelector(".list");
@@ -50,9 +51,7 @@ const priceChildrenBoxItem = document.querySelectorAll(
 priceChildrenBoxItem.forEach((item) => {
   item.addEventListener("click", () => {
     let title = item.querySelector("h3");
-    formTitle.textContent = `Записаться на ${(
-      <strong>title.textContent</strong>
-    )}`;
+    formTitle.textContent = `Записаться на ${title.textContent}`;
     form.classList.add("active");
     body.classList.add("lock");
     formContainer.style.display = "block";
@@ -121,7 +120,6 @@ if (burger.classList.contains("active")) {
 mainBtn.addEventListener("click", () => {
   form.classList.add("active");
   body.classList.add("lock");
-  // mainBtn.style.display = "none";
   burger.style.display = "none";
   list.classList.remove("active");
   formContainer.style.display = "block";
@@ -132,8 +130,8 @@ formClose.addEventListener("click", () => {
   body.classList.remove("lock");
   burger.classList.remove("active");
   formContainer.style.display = "none";
-  mainBtn.style.display = "block";
   if (window.innerWidth <= 830) {
+    mainBtn.style.display = "none";
     burger.style.display = "block";
   }
 });
@@ -150,27 +148,49 @@ form.addEventListener("submit", function (e) {
   message += `<b>Отправитель:</b> ${this.name.value}\n`;
   message += `<b>Телефон:</b> ${this.tel.value}\n`;
   message += `<b>Информация:</b> ${this.text.value}`;
-  axios
-    .post(URI_API, {
-      chat_id: ChatID,
-      parse_mode: "html",
-      text: message,
-    })
-    .then((res) => {
-      this.name.value = "";
-      this.tel.value = "";
-      this.text.value = "";
-      sucsess.style.display = "block";
-      sucsess.innerHTML = "Спасибо, я вам перезвоню!";
-      setTimeout(function () {
-        form.classList.remove("active");
-        body.classList.remove("lock");
-        mainBtn.style.display = "block";
-        sucsess.innerHTML = "";
-        sucsess.style.display = "none";
-        formContainer.style.display = "none";
-      }, 2000);
-    });
+
+  if (this.name.value.length < 3) {
+    this.name.classList.add("wrong");
+    sucsess.style.display = "block";
+    sucsess.innerHTML = "Напишите правильно Имя";
+    setTimeout(function () {
+      sucsess.style.display = "none";
+      formInput.classList.remove("wrong");
+    }, 2000);
+  } else if (this.tel.value.length !== 16) {
+    this.tel.classList.add("wrong");
+    sucsess.style.display = "block";
+    sucsess.innerHTML = "Напишите правильно Телефон";
+    setTimeout(() => {
+      this.tel.classList.remove("wrong");
+      sucsess.style.display = "none";
+    }, 2000);
+    // setTimeout(function () {
+
+    // }, 3000);
+  } else {
+    axios
+      .post(URI_API, {
+        chat_id: ChatID,
+        parse_mode: "html",
+        text: message,
+      })
+      .then((res) => {
+        this.name.value = "";
+        this.tel.value = "";
+        this.text.value = "";
+        sucsess.style.display = "block";
+        sucsess.innerHTML = "Спасибо, я вам перезвоню!";
+        setTimeout(function () {
+          form.classList.remove("active");
+          body.classList.remove("lock");
+          mainBtn.style.display = "block";
+          sucsess.innerHTML = "";
+          sucsess.style.display = "none";
+          formContainer.style.display = "none";
+        }, 2000);
+      });
+  }
 });
 
 //////////////////////// Маска телефона
